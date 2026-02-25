@@ -133,7 +133,7 @@ footer{position:relative;z-index:1;background:var(--bg2);border-top:1px solid va
 .rv{opacity:0;transform:translateY(30px);transition:opacity .6s ease,transform .6s ease}.rv.v{opacity:1;transform:translateY(0)}
 /* BEFORE AFTER TABLE */
 .ba-table{width:100%;border-collapse:separate;border-spacing:0;border-radius:16px;overflow:hidden;background:var(--surface);border:1px solid var(--border)}
-.ba-table thead th{background:var(--t);color:#fff;padding:14px 16px;font-size:12px;font-weight:700;letter-spacing:.5px;text-align:left}
+.ba-table thead th{background:#1a2e1a;color:#fff;padding:14px 16px;font-size:12px;font-weight:700;letter-spacing:.5px;text-align:left}
 .ba-table thead th:first-child{border-radius:0}
 .ba-table tbody td{padding:16px;font-size:13px;color:var(--t2);border-bottom:1px solid var(--border);vertical-align:middle;line-height:1.6}
 .ba-table tbody tr:last-child td{border-bottom:none}
@@ -148,13 +148,13 @@ footer{position:relative;z-index:1;background:var(--bg2);border-top:1px solid va
 @media(max-width:768px){.ba-table-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:0 -20px;padding:0 20px}.ba-table{min-width:640px}}
 /* 外注の限界 */
 .outsource-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px}
-.outsource-card{padding:24px;border-radius:14px;background:var(--surface);border:1px solid var(--border)}
+.outsource-card{padding:24px;border-radius:14px;background:var(--surface);border:1px solid var(--border);border-left:3px solid #ef4444;transition:all .3s}.outsource-card:hover{border-color:rgba(239,68,68,.3);box-shadow:0 8px 30px rgba(239,68,68,.06)}
 .outsource-card .os-icon{font-size:24px;margin-bottom:12px}
 .outsource-card h4{font-size:15px;font-weight:700;margin-bottom:8px;color:var(--t)}
 .outsource-card p{font-size:13px;color:var(--t3);line-height:1.8}
 /* API Cost */
 .api-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:24px}
-.api-card{padding:24px;border-radius:14px;background:var(--surface);border:1px solid var(--border);text-align:center}
+.api-card{padding:24px;border-radius:14px;background:var(--surface);border:1px solid var(--border);text-align:center;transition:all .3s}.api-card:hover{border-color:var(--green);transform:translateY(-2px)}
 .api-card .api-emoji{font-size:28px;margin-bottom:10px}
 .api-card h4{font-size:14px;font-weight:700;margin-bottom:4px}
 .api-card .api-use{font-size:12px;color:var(--t4);margin-bottom:8px}
@@ -184,8 +184,8 @@ footer{position:relative;z-index:1;background:var(--bg2);border-top:1px solid va
 <section class="hero">
   <div class="hero-inner">
     <div class="hero-tag">EC × AI Automation Company</div>
-    <h1>あなたの<span class="green">面倒くさい！</span>を、<br>AIで全部自動化にしちゃえ。<span class="sub">面倒な作業 → 自動化 → 人件費を大幅カット。<br>25年間ずっと面倒だったことが、2026年、全部解決できる時代になった。</span></h1>
-    <p class="hero-desc">転売、OEM、Amazon年商2億円、事業売却。25年間EC現場で戦ってきて、<strong>「面倒くさい」をずっと我慢してきました</strong>。商品説明の手書き、画像加工、モール間の転記、問い合わせ返信、在庫チェック。全部手作業。でも2026年の今、<strong>AIとプログラミングでその全部が片付く</strong>。VBA・GAS・RPAにも対応。丸投げ歓迎。</p>
+    <h1>あなたの<span class="green">面倒くさい！</span>を、<br>AIで全部自動化しちゃえ。<span class="sub">面倒な作業 → 自動化 → 人件費を大幅カット。<br>25年間ずっと我慢してきたことが、2026年、全部片付く時代になった。</span></h1>
+    <p class="hero-desc">Amazon年商2億円、事業売却。25年間EC現場で戦ってきて、<strong>「面倒くさい」をずっと我慢してきました</strong>。商品説明の手書き、画像加工、モール間の転記、問い合わせ返信、在庫チェック——全部手作業。でも今、<strong>AIとプログラミングでその全部が片付く</strong>。VBA・GAS・RPAにも対応。丸投げ歓迎。</p>
     <div class="hero-actions"><a href="#contact" class="btn-primary">無料で相談する →</a><a href="#services" class="btn-secondary">サービスを見る</a></div>
     <div class="hero-numbers">
       <div class="num-item"><div class="num">25<em>年</em></div><div class="num-label">EC業界の実戦経験</div></div>
@@ -198,7 +198,7 @@ footer{position:relative;z-index:1;background:var(--bg2);border-top:1px solid va
 
 <!-- BEFORE → AFTER -->
 <section id="before-after"><div class="section-inner">
-  <div style="text-align:center;margin-bottom:48px"><div class="section-label rv">BEFORE → AFTER</div><h2 class="section-title rv">25年間ずっと面倒だったことが、<br>全部解決できる時代になった。</h2></div>
+  <div style="text-align:center;margin-bottom:48px"><div class="section-label rv">BEFORE → AFTER</div><h2 class="section-title rv">同じ作業に、<br>まだ何時間かけていますか？</h2></div>
   <div class="ba-table-wrap rv">
   <table class="ba-table">
     <thead><tr><th></th><th>😩 Before</th><th>時間</th><th>コスト</th><th></th><th>⚡ After</th><th>時間</th><th>コスト</th></tr></thead>
@@ -215,20 +215,20 @@ footer{position:relative;z-index:1;background:var(--bg2);border-top:1px solid va
 
 <!-- 外注の限界 -->
 <section class="service-section alt"><div class="section-inner">
-  <div style="text-align:center;margin-bottom:48px"><div class="section-label rv">THE PROBLEM</div><h2 class="section-title rv">外注すれば解決する？<br>…しなかった。</h2><p class="section-desc rv" style="margin:0 auto">25年間、いろんな外注を試してきました。うまくいかないパターンには共通点があります。</p></div>
+  <div style="text-align:center;margin-bottom:48px"><div class="section-label rv">THE PROBLEM</div><h2 class="section-title rv">外注すれば解決する？<br>…しなかった。</h2><p class="section-desc rv" style="margin:0 auto">25年間、いろんな外注を試した。うまくいかないパターンには共通点がある。</p></div>
   <div class="outsource-grid">
-    <div class="outsource-card rv"><div class="os-icon">🎨</div><h4>「綺麗だけど売れない」画像が来た</h4><p>デザイナーはEC未経験。見た目は綺麗だけど、クリック率も転換率も上がらない。「売れる画像」は、売った経験がないと作れない。</p></div>
-    <div class="outsource-card rv"><div class="os-icon">💻</div><h4>「技術的には正しいけど使えない」ツールが来た</h4><p>エンジニアにEC自動化を依頼。動くけど、現場のフローに合わない。修正依頼3往復。見積¥50万。結局使わなくなった。</p></div>
-    <div class="outsource-card rv"><div class="os-icon">📝</div><h4>「誰が書いても同じ」商品説明が来た</h4><p>ライターに依頼。当たり障りない文章。SEOも弱い。結局自分で書き直した。外注管理の時間がまるまる無駄に。</p></div>
-    <div class="outsource-card rv"><div class="os-icon">👥</div><h4>人を雇ったら教育3ヶ月。辞めたらゼロから</h4><p>パートを採用。3ヶ月かけて教育完了。半年後に退職。引き継ぎ資料もない。また同じことを最初から。</p></div>
+    <div class="outsource-card rv"><div class="os-icon">🎨</div><h4>「綺麗だけど売れない」画像</h4><p>デザイナーにEC経験がない。クリック率も転換率も上がらない。「売れる画像」は、売った人間にしか作れない。</p></div>
+    <div class="outsource-card rv"><div class="os-icon">💻</div><h4>「動くけど使えない」ツール</h4><p>エンジニアにEC自動化を依頼。動くが、現場のフローに合わない。修正3往復、見積¥50万。結局使わなくなった。</p></div>
+    <div class="outsource-card rv"><div class="os-icon">📝</div><h4>「誰が書いても同じ」商品説明</h4><p>ライターに依頼。当たり障りない文章。SEOも弱い。結局自分で書き直した。外注管理がまるまる無駄に。</p></div>
+    <div class="outsource-card rv"><div class="os-icon">👥</div><h4>教育3ヶ月、退職、ゼロから</h4><p>パートを採用、3ヶ月で教育完了。半年後に退職。引き継ぎ資料もない。また最初から。</p></div>
   </div>
-  <div style="text-align:center;margin-top:40px" class="rv"><p style="font-size:16px;font-weight:700;color:var(--t)">外注管理そのものが、仕事になっていませんか？</p><p style="font-size:14px;color:var(--t3);margin-top:8px">AIなら、疲れない。ムラがない。辞めない。<br>ただし、AIに丸投げでは品質は出ない。大事なのは<strong style="color:var(--green)">ルール設計</strong>。</p></div>
+  <div style="text-align:center;margin-top:40px" class="rv"><p style="font-size:16px;font-weight:700;color:var(--t)">外注管理そのものが、あなたの仕事になっていませんか？</p><p style="font-size:14px;color:var(--t3);margin-top:8px">AIは疲れない。ムラがない。辞めない。<br>ただし、丸投げでは品質は出ない。大事なのは<strong style="color:var(--green)">ルール設計</strong>。</p></div>
 </div></section>
 
 <!-- PHILOSOPHY / RULE -->
 <section class="philosophy"><div class="section-inner"><div class="phil-quote rv">
   <blockquote>ルールを作るのは、25年の経験。<br><span class="green">回すのはAI。</span><br>だから品質が出る。</blockquote>
-  <p>AIに丸投げでは品質は出ません。モール別のSEOルール、ブランドのトーン＆マナー、品質基準、NGワード。この「設計図」を25年のEC経験で作り込む。だから100回やっても1000回やっても、アウトプットの品質が安定します。人間は疲れる。AIは疲れない。</p>
+  <p>AIに丸投げでは品質は出ない。モール別のSEOルール、ブランドのトーン＆マナー、品質基準、NGワード——この「設計図」を25年のEC経験で作り込む。だから100回やっても1000回やっても、品質が安定する。人間は疲れる。AIは疲れない。</p>
 </div>
 
 <div class="api-grid rv">
@@ -236,22 +236,22 @@ footer{position:relative;z-index:1;background:var(--bg2);border-top:1px solid va
   <div class="api-card"><div class="api-emoji">🏢</div><h4>Claude</h4><div class="api-use">判断・文章品質</div><div class="api-cost">高品質</div></div>
   <div class="api-card"><div class="api-emoji">🖥️</div><h4>ローカルPython</h4><div class="api-use">画像処理・変換</div><div class="api-cost">¥0</div></div>
 </div>
-<p class="rv" style="text-align:center;font-size:13px;color:var(--t4);margin-top:16px">「AIは高い」と思っていませんか？適材適所で使えば、月数千円で回ります。</p>
+<p class="rv" style="text-align:center;font-size:13px;color:var(--t4);margin-top:16px">「AI＝高い」は誤解。適材適所で使えば、月数千円で回る。</p>
 
 <div class="platforms rv"><span class="platform-tag">Amazon</span><span class="platform-tag">楽天市場</span><span class="platform-tag">Yahoo!ショッピング</span><span class="platform-tag">Shopify</span><span class="platform-tag">BASE</span><span class="platform-tag">Qoo10</span><span class="platform-tag">eBay</span><span class="platform-tag">ヤフオク</span><span class="platform-tag">メルカリShops</span><span class="platform-tag">自社EC</span></div></div></section>
 
 <!-- STORY -->
 <section id="story" class="story-section">
   <div class="section-inner">
-    <div style="text-align:center;margin-bottom:56px"><div class="section-label rv">OUR STORY</div><h2 class="section-title rv">25年間、「面倒くさい」と戦ってきた。</h2><p class="section-desc rv" style="margin:0 auto">上場企業の広報 → ヤフオク → 転売 → OEM → Amazon年商2億 → 事業売却。全部やった。そして今、その面倒を全部AIで片付ける側に回った。</p></div>
+    <div style="text-align:center;margin-bottom:56px"><div class="section-label rv">OUR STORY</div><h2 class="section-title rv">25年間、「面倒くさい」と戦ってきた。</h2><p class="section-desc rv" style="margin:0 auto">上場企業の広報 → ヤフオク → 転売 → OEM → Amazon年商2億 → 事業売却。<br>全部やった。そして今、その面倒を全部AIで片付ける側に回った。</p></div>
     <div class="story-timeline">
-      <article class="story-item rv"><div class="story-dot"></div><div class="story-year">1997年〜</div><h3>上場企業の広報部で「伝え方」を学んだ</h3><p>東証一部上場企業の広報部に所属。プレスリリースの書き方やメディア対応の基礎はここで叩き込まれました。その後Webディレクターに転じ、某ドームの座席表PDF化を企画。この座席表は今もそのドームの公式として使われています。</p></article>
-      <article class="story-item rv"><div class="story-dot"></div><div class="story-year">2000年〜</div><h3>ヤフオクで「売る」を知った</h3><p>インターネットがまだ珍しかった頃。ヤフオクで初めてモノを売り、画面の向こうに買い手がいてお金が振り込まれた。あの感覚は今でも覚えています。すべてはここから始まりました。</p></article>
-      <article class="story-item rv"><div class="story-dot"></div><div class="story-year">2005年〜</div><h3>転売で「相場の目」を養った</h3><p>国内転売から中国輸入へ。どこで仕入れ、いつ出品し、いくらで売るか。毎日の積み重ねの中で、数字を見て判断する感覚が身につきました。</p></article>
-      <article class="story-item rv"><div class="story-dot"></div><div class="story-year">2010年〜</div><h3>OEMで「自分のブランド」を持った</h3><p>他社の商品を売るだけでは限界がある。中国の工場と直接交渉し、自社ブランドのOEM生産に踏み切りました。品質管理、商標登録、全部ゼロから。最もやりがいのある仕事でした。</p></article>
-      <article class="story-item rv"><div class="story-dot"></div><div class="story-year">2015年〜</div><h3>Amazon年商2億円を達成</h3><p>自社ブランドが伸び、年商2億円に到達。広告運用、SEO、在庫管理、すべて自分の手で回した結果です。売れる仕組みは待っていても来ない。自分で作るしかないと実感しました。</p></article>
-      <article class="story-item rv"><div class="story-dot"></div><div class="story-year">2023年</div><h3>事業を売却し、次のステージへ</h3><p>育て上げたAmazon事業を手放しました。でもECの世界から離れる気にはなれなかった。次はもっと多くのEC事業者の力になりたい。そう決めました。</p></article>
-      <article class="story-item active rv"><div class="story-dot"></div><div class="story-year">2024年〜 NOW</div><h3>EC自動化の未来を作る</h3><p>再びECの世界へ。25年分の経験をすべて注ぎ込み、AIとプログラミングで「EC運営の面倒をゼロにする」ことに挑んでいます。YouTubeやXでの発信も開始。EC事業者の方々と一緒に、次のステージを作っていきます。</p></article>
+      <article class="story-item rv"><div class="story-dot"></div><div class="story-year">1997年〜</div><h3>上場企業の広報部で「伝え方」を学んだ</h3><p>東証一部上場企業の広報部に所属。プレスリリースの書き方、メディア対応の基礎はここで叩き込まれた。その後Webディレクターに転じ、某ドームの座席表PDF化を企画。この座席表は今もそのドームの公式として使われている。</p></article>
+      <article class="story-item rv"><div class="story-dot"></div><div class="story-year">2000年〜</div><h3>ヤフオクで「売る」を知った</h3><p>インターネットがまだ珍しかった頃。ヤフオクで初めてモノを売り、画面の向こうに買い手がいてお金が振り込まれた。あの感覚は今でも覚えている。すべてはここから始まった。</p></article>
+      <article class="story-item rv"><div class="story-dot"></div><div class="story-year">2005年〜</div><h3>転売で「相場の目」を養った</h3><p>国内転売から中国輸入へ。どこで仕入れ、いつ出品し、いくらで売るか。毎日の積み重ねの中で、数字で判断する感覚が身についた。</p></article>
+      <article class="story-item rv"><div class="story-dot"></div><div class="story-year">2010年〜</div><h3>OEMで「自分のブランド」を持った</h3><p>他社の商品を売るだけでは限界がある。中国の工場と直接交渉し、自社ブランドのOEM生産に踏み切った。品質管理、商標登録、全部ゼロから。最もやりがいのある仕事だった。</p></article>
+      <article class="story-item rv"><div class="story-dot"></div><div class="story-year">2015年〜</div><h3>Amazon年商2億円を達成</h3><p>自社ブランドが伸び、年商2億円に到達。広告運用、SEO、在庫管理、すべて自分の手で回した結果だ。売れる仕組みは待っていても来ない。自分で作るしかないと実感した。</p></article>
+      <article class="story-item rv"><div class="story-dot"></div><div class="story-year">2023年</div><h3>事業を売却し、次のステージへ</h3><p>育て上げたAmazon事業を手放した。でもECの世界から離れる気にはなれなかった。次はもっと多くのEC事業者の力になりたい。そう決めた。</p></article>
+      <article class="story-item active rv"><div class="story-dot"></div><div class="story-year">2024年〜 NOW</div><h3>EC自動化の未来を作る</h3><p>再びECの世界へ。25年分の経験をすべて注ぎ込み、AIとプログラミングで「EC運営の面倒をゼロにする」ことに挑んでいる。</p></article>
     </div>
   </div>
 </section>
@@ -259,18 +259,16 @@ footer{position:relative;z-index:1;background:var(--bg2);border-top:1px solid va
 <!-- WHO WE HELP -->
 <section><div class="section-inner"><div style="text-align:center;margin-bottom:56px"><div class="section-label rv">WHO WE HELP</div><h2 class="section-title rv">こんな方は、話が早いです</h2></div>
 <div class="target-grid">
-  <div class="target-card rv"><div class="tc-icon">🏪</div><div><h4>毎日の作業に追われて「売る」時間がないEC運営者</h4><p>商品登録、在庫管理、問い合わせ対応。気づいたら1日が終わっている、という方。</p></div></div>
-  <div class="target-card rv"><div class="tc-icon">📦</div><div><h4>多モール展開したいけど手が回らないセラー</h4><p>楽天もAmazonもやりたい。でも商品説明の書き分けや価格調整を全部手でやるのは限界。</p></div></div>
-  <div class="target-card rv"><div class="tc-icon">🚀</div><div><h4>中国輸入・OEMに挑戦したい方</h4><p>商品リサーチや工場選定、何からやればいいかわからない。経験者に聞きながら進めたい。</p></div></div>
-  <div class="target-card rv"><div class="tc-icon">📰</div><div><h4>商品のPRがうまくいかない方</h4><p>プレスリリースを出したいけど書き方がわからない。メディアに取り上げてほしい。</p></div></div>
-  <div class="target-card rv"><div class="tc-icon">🖼️</div><div><h4>「売れる画像」が欲しい方</h4><p>画像は綺麗なんだけど、なぜか売れない。EC経験のある人に頼みたい。</p></div></div>
-  <div class="target-card rv"><div class="tc-icon">⚙️</div><div><h4>Excel・VBA・GASで作業を自動化したい方</h4><p>毎日同じ操作を繰り返してる。もう、うんざり。</p></div></div>
-  <div class="target-card rv"><div class="tc-icon">📱</div><div><h4>ブログ・SNSで認知を広げたい方</h4><p>コンテンツが大事なのはわかってる。でも書く時間がない。全自動で回したい。</p></div></div>
+  <div class="target-card rv"><div class="tc-icon">🏪</div><div><h4>毎日の作業に追われて「売る」時間がないEC運営者</h4><p>商品登録、在庫管理、問い合わせ対応。気づいたら1日が終わっている。</p></div></div>
+  <div class="target-card rv"><div class="tc-icon">📦</div><div><h4>多モール展開したいけど手が回らないセラー</h4><p>楽天もAmazonもやりたい。でも書き分け・価格調整を全部手でやるのは限界。</p></div></div>
+  <div class="target-card rv"><div class="tc-icon">🚀</div><div><h4>中国輸入・OEMに挑戦したい方</h4><p>商品リサーチや工場選定、何から始めればいいかわからない。経験者と一緒に進めたい。</p></div></div>
+  <div class="target-card rv"><div class="tc-icon">🖼️</div><div><h4>「綺麗だけど売れない」画像・PRに悩んでいる方</h4><p>画像もプレスリリースも、EC経験のある人間に任せたい。</p></div></div>
+  <div class="target-card rv"><div class="tc-icon">⚙️</div><div><h4>Excel作業・SNS更新を自動化したい方</h4><p>毎日同じ操作を繰り返してる。もう、うんざり。全自動で回したい。</p></div></div>
 </div></div></section>
 
 <!-- SERVICE NAVIGATION -->
 <section id="services"><div class="section-inner">
-  <div style="text-align:center;margin-bottom:48px"><div class="section-label rv">SERVICES</div><h2 class="section-title rv">7つの事業領域</h2><p class="section-desc rv" style="margin:0 auto">元セラー × エンジニア × AI。売る視点と作る技術が一人で完結します。</p></div>
+  <div style="text-align:center;margin-bottom:48px"><div class="section-label rv">SERVICES</div><h2 class="section-title rv">7つの事業領域</h2><p class="section-desc rv" style="margin:0 auto">元セラー × エンジニア × AI。売る視点と作る技術が、一人で完結する。</p></div>
   <div class="svc-nav rv">
     <a href="#svc01" class="svc-nav-card"><div class="svc-nav-num">01</div><div><h4>EC業務の自動化</h4><p>n8n × Python × AIでワークフローを構築</p></div></a>
     <a href="#svc02" class="svc-nav-card"><div class="svc-nav-num">02</div><div><h4>Amazon × 中国輸入コンサル</h4><p>リサーチからブランド構築まで伴走</p></div></a>
@@ -285,7 +283,7 @@ footer{position:relative;z-index:1;background:var(--bg2);border-top:1px solid va
 <!-- 01 EC業務の自動化 -->
 <section id="svc01" class="service-section">
   <div class="section-inner">
-    <div class="ss-header rv"><div class="ss-num">01</div><div class="ss-header-text"><h2>n8n × Python × AI<br>EC業務の自動化</h2><p class="ss-subtitle">手作業を減らして、売ることに集中できる環境をつくります</p></div></div>
+    <div class="ss-header rv"><div class="ss-num">01</div><div class="ss-header-text"><h2>n8n × Python × AI<br>EC業務の自動化</h2><p class="ss-subtitle">手作業を減らして、売ることに集中できる環境をつくる</p></div></div>
     <div class="ss-pain rv"><h3>こんなお悩みはありませんか？</h3><div class="ss-pain-list">
       <div class="ss-pain-item">商品説明を1つずつ手書きしていて、時間が足りない</div>
       <div class="ss-pain-item">楽天のデータをAmazonに手作業で転記している</div>
@@ -320,7 +318,7 @@ footer{position:relative;z-index:1;background:var(--bg2);border-top:1px solid va
 <!-- 02 Amazon × China Import -->
 <section id="svc02" class="service-section alt">
   <div class="section-inner">
-    <div class="ss-header rv"><div class="ss-num">02</div><div class="ss-header-text"><h2>Amazon × 中国輸入<br>総合コンサルティング</h2><p class="ss-subtitle">販売歴20年の経験をもとに、Amazonビジネスの成長を一緒に設計します</p></div></div>
+    <div class="ss-header rv"><div class="ss-num">02</div><div class="ss-header-text"><h2>Amazon × 中国輸入<br>総合コンサルティング</h2><p class="ss-subtitle">販売歴20年の経験をもとに、Amazonビジネスの成長を一緒に設計する</p></div></div>
     <div class="ss-pain rv"><h3>こんなお悩みはありませんか？</h3><div class="ss-pain-list"><div class="ss-pain-item">スクールに入ったが成果につながらなかった</div><div class="ss-pain-item">商品リサーチの方法がわからない。正解かどうか不安</div><div class="ss-pain-item">中国の工場をどう選べばいいか判断基準がない</div><div class="ss-pain-item">広告の設定がわからず手が止まっている</div><div class="ss-pain-item">在庫管理があいまいで効率が悪い</div></div></div>
     <div class="detail-grid">
       <div class="detail-item rv"><div class="detail-header"><h4><span class="dot"></span>商品リサーチ</h4></div><div class="detail-body"><div class="detail-body-inner">リサーチが成果の8割を左右します。重要なのは「売れている商品」ではなく「利益が残る商品」を見つけること。Keepaの波形の読み方、BSRから月間販売数を逆算する方法、競合レビューから参入タイミングを判断する考え方をお伝えします。原価・送料・FBA手数料・広告費をすべて含めた「本当の利益計算」の仕方も共有します。Keepa、Jungle Scout、Helium 10などを使い、データに基づいた分析を行います。</div></div></div>
@@ -336,7 +334,7 @@ footer{position:relative;z-index:1;background:var(--bg2);border-top:1px solid va
 <!-- 03 Press Release -->
 <section id="svc03" class="service-section">
   <div class="section-inner">
-    <div class="ss-header rv"><div class="ss-num">03</div><div class="ss-header-text"><h2>EC事業者向け<br>プレスリリース執筆</h2><p class="ss-subtitle">元上場企業の広報出身。メディアが何を求めているか、わかった上で書きます</p></div></div>
+    <div class="ss-header rv"><div class="ss-num">03</div><div class="ss-header-text"><h2>EC事業者向け<br>プレスリリース執筆</h2><p class="ss-subtitle">元上場企業の広報出身。メディアが何を求めているか、わかった上で書く</p></div></div>
     <div class="strengths-grid" style="margin-bottom:40px">
       <div class="strength-card rv"><div class="sc-num">01</div><h3>上場企業の広報部出身</h3><p>広報部でプレスリリースの書き方を叩き込まれました。記者がどこに注目するか、どんな見出しなら読まれるか。体で覚えた感覚がベースにあります。</p></div>
       <div class="strength-card rv"><div class="sc-num">02</div><h3>EC業界100社以上の実績</h3><p>Amazon、楽天、Yahoo!、eBay、自社EC。新商品ローンチからキャンペーン告知まで、EC事業者のPRを100社以上手がけてきました。</p></div>
@@ -354,7 +352,7 @@ footer{position:relative;z-index:1;background:var(--bg2);border-top:1px solid va
 <!-- 04 Product Image -->
 <section id="svc04" class="service-section alt">
   <div class="section-inner">
-    <div class="ss-header rv"><div class="ss-num">04</div><div class="ss-header-text"><h2>売れる商品画像制作<br>丸投げOK</h2><p class="ss-subtitle">Amazon年商2億の元セラーが作る「売れる画像」。見た目の仕上がりと裏の効率化、両方やります</p></div></div>
+    <div class="ss-header rv"><div class="ss-num">04</div><div class="ss-header-text"><h2>売れる商品画像制作<br>丸投げOK</h2><p class="ss-subtitle">Amazon年商2億の元セラーが作る「売れる画像」。仕上がりと効率化、両方やる</p></div></div>
     <div class="ss-pain rv"><h3>こんなお悩みはありませんか？</h3><div class="ss-pain-list">
       <div class="ss-pain-item">画像を外注しているが、デザイナーにEC経験がなく成果が出ない</div>
       <div class="ss-pain-item">画像は綺麗だけど、なぜか売れない</div>
@@ -400,7 +398,7 @@ footer{position:relative;z-index:1;background:var(--bg2);border-top:1px solid va
 <!-- 06 EC Operations -->
 <section id="svc06" class="service-section alt">
   <div class="section-inner">
-    <div class="ss-header rv"><div class="ss-num">06</div><div class="ss-header-text"><h2>EC運用代行<br>商品登録・更新・多モール管理</h2><p class="ss-subtitle">出品作業やデータ更新をまるごとお任せください。自動化と人手の最適なバランスで回します</p></div></div>
+    <div class="ss-header rv"><div class="ss-num">06</div><div class="ss-header-text"><h2>EC運用代行<br>商品登録・更新・多モール管理</h2><p class="ss-subtitle">出品作業やデータ更新をまるごとお任せ。自動化と人手の最適バランスで回す</p></div></div>
     <div class="ss-pain rv"><h3>こんなお悩みはありませんか？</h3><div class="ss-pain-list">
       <div class="ss-pain-item">新商品の登録が追いつかない。100SKU以上を一括登録したい</div>
       <div class="ss-pain-item">楽天・Amazon・Yahoo!の商品情報をそれぞれ手動で更新している</div>
@@ -419,7 +417,7 @@ footer{position:relative;z-index:1;background:var(--bg2);border-top:1px solid va
 <!-- 07 Content Marketing Automation -->
 <section id="svc07" class="service-section">
   <div class="section-inner">
-    <div class="ss-header rv"><div class="ss-num">07</div><div class="ss-header-text"><h2>ブログ × NOTE × SNS<br>コンテンツマーケティング全自動化</h2><p class="ss-subtitle">記事の生成からWordPress投稿、NOTE配信、SNS展開まで全自動。「仕組み」で商品の認知を広げます</p></div></div>
+    <div class="ss-header rv"><div class="ss-num">07</div><div class="ss-header-text"><h2>ブログ × NOTE × SNS<br>コンテンツマーケティング全自動化</h2><p class="ss-subtitle">記事の生成からWordPress投稿、NOTE配信、SNS展開まで全自動。「仕組み」で認知を広げる</p></div></div>
     <div class="ss-pain rv"><h3>こんなお悩みはありませんか？</h3><div class="ss-pain-list">
       <div class="ss-pain-item">「ブログやSNSをやらなきゃ」と思いつつ手が回らない</div>
       <div class="ss-pain-item">プロモーションが広告だけに偏っている</div>
@@ -442,7 +440,7 @@ footer{position:relative;z-index:1;background:var(--bg2);border-top:1px solid va
 </section>
 
 <!-- FLOW -->
-<section id="flow" class="service-section"><div class="section-inner"><div style="text-align:center;margin-bottom:56px"><div class="section-label rv">FLOW</div><h2 class="section-title rv">ご利用の流れ</h2><p class="section-desc rv" style="margin:0 auto">「これ、自動化できますか？」くらいのご相談でOK。初回無料です。</p></div>
+<section id="flow" class="service-section"><div class="section-inner"><div style="text-align:center;margin-bottom:56px"><div class="section-label rv">FLOW</div><h2 class="section-title rv">ご利用の流れ</h2><p class="section-desc rv" style="margin:0 auto">「これ、自動化できますか？」くらいの相談でOK。初回無料。</p></div>
 <div class="flow-grid">
 <div class="flow-card rv"><div class="flow-num">01</div><div class="flow-icon">💬</div><h4>無料ご相談</h4><p>今のお悩みを聞かせてください。「こんな作業を自動化したい」「何ができるか知りたい」程度で大丈夫です。</p><div class="flow-detail">チャット形式のみ。声出し不要。平日10:00〜24:00、土日祝14:00〜24:00で返信します。</div></div>
 <div class="flow-card rv"><div class="flow-num">02</div><div class="flow-icon">📋</div><h4>ヒアリング・ご提案</h4><p>業務内容・使用ツール・目標を伺い、最適な方法と技術を選定。費用と納期を明確にお伝えします。</p><div class="flow-detail">n8n / Python / VBA / GAS / RPAの中から最適な技術を選定。複雑な要件は要件定義書を作成します。</div></div>
@@ -453,14 +451,14 @@ footer{position:relative;z-index:1;background:var(--bg2);border-top:1px solid va
 </div></div></section>
 
 <!-- WHY US -->
-<section id="why"><div class="section-inner"><div class="section-label rv">WHY US</div><h2 class="section-title rv">選ばれる理由</h2><div class="section-desc rv">技術があるだけでもない。EC経験があるだけでもない。両方持っているから、本当に使える自動化を作れます。</div>
+<section id="why"><div class="section-inner"><div class="section-label rv">WHY US</div><h2 class="section-title rv">選ばれる理由</h2><div class="section-desc rv">技術があるだけでもない。EC経験があるだけでもない。<br>両方持っているから、本当に使える自動化を作れる。</div>
 <div class="strengths-grid">
-  <div class="strength-card rv"><div class="sc-num">01</div><h3>25年の現場経験</h3><p>上場企業の広報、ヤフオク、転売、OEM、Amazon年商2億円、事業売却。全部自分でやってきました。エンジニアに外注すると「技術的には正しいがECの現場では使いにくい」ツールが出来がちです。当方はEC現場の感覚を持ったエンジニアです。</p></div>
-  <div class="strength-card rv"><div class="sc-num">02</div><h3>ココナラ全件満足の実績</h3><p>ココナラでの取引すべてにご満足いただいています。「とりあえず作って終わり」ではなく、「運用してから本当に役立つ」ことにこだわってきた結果です。リピートも多くいただいています。</p></div>
-  <div class="strength-card rv"><div class="sc-num">03</div><h3>全工程が一人で完結</h3><p>EC歴25年・SE歴10年・AI活用。打ち合わせから要件定義、開発、テスト、納品まで全部一人で対応するので、伝達ミスが起きません。「こういうことがやりたい」という曖昧なご要望も、EC現場の理解をベースに形にします。</p></div>
-  <div class="strength-card rv"><div class="sc-num">04</div><h3>技術の選択肢が広い</h3><p>n8n、Python、VBA、GAS、RPA、exeファイル。お客様の環境と目的に合わせて最適な技術を選びます。「これしかできません」という縛りがないので、コストパフォーマンスの高い方法を提案できます。</p></div>
-  <div class="strength-card rv"><div class="sc-num">05</div><h3>AI活用でスピード納品</h3><p>Claude、ChatGPT、Midjourney、Canva ProなどAIツールをフル活用。品質を落とさず、低コスト・短納期で納品します。AI前提の設計で、従来の開発と差をつけます。</p></div>
-  <div class="strength-card rv"><div class="sc-num">06</div><h3>丸投げOK・チャット完結</h3><p>「何をどう頼めばいいかわからない」という段階から対応します。堅苦しいやり取りは不要。チャットで完結。深夜帯（22:00以降）も歓迎。できる限り早い返信を心がけています。</p></div>
+  <div class="strength-card rv"><div class="sc-num">01</div><h3>25年の現場経験</h3><p>上場企業の広報、ヤフオク、転売、OEM、Amazon年商2億円、事業売却。全部自分でやった。ECの現場感覚を持ったエンジニアは、ほぼいない。</p></div>
+  <div class="strength-card rv"><div class="sc-num">02</div><h3>ココナラ全件満足の実績</h3><p>取引すべてにご満足いただいている。「作って終わり」ではなく「運用して役立つ」にこだわった結果。リピートも多い。</p></div>
+  <div class="strength-card rv"><div class="sc-num">03</div><h3>全工程が一人で完結</h3><p>打ち合わせから要件定義、開発、テスト、納品まで一人で完結。伝達ミスが起きない。曖昧な要望も、EC現場の理解をベースに形にする。</p></div>
+  <div class="strength-card rv"><div class="sc-num">04</div><h3>技術の選択肢が広い</h3><p>n8n、Python、VBA、GAS、RPA、exeファイル。環境と目的に合わせて最適な技術を選ぶ。「これしかできません」という縛りがない。</p></div>
+  <div class="strength-card rv"><div class="sc-num">05</div><h3>AI活用でスピード納品</h3><p>Claude、Gemini、Midjourney、Canva Pro——AIをフル活用して、品質を落とさず低コスト・短納期で納品する。</p></div>
+  <div class="strength-card rv"><div class="sc-num">06</div><h3>丸投げOK・チャット完結</h3><p>「何をどう頼めばいいかわからない」段階から対応。堅苦しいやり取り不要。深夜帯も歓迎。</p></div>
 </div></div></section>
 
 <!-- FAQ -->
@@ -494,7 +492,7 @@ footer{position:relative;z-index:1;background:var(--bg2);border-top:1px solid va
 </div></section>
 
 <!-- COCONALA -->
-<section class="coconala-section"><div class="section-inner"><div class="section-label rv">COCONALA</div><h2 class="section-title rv">ココナラでも提供しています</h2><div class="section-desc rv">各サービスはココナラからもご依頼いただけます。全員にご満足いただいています。</div>
+<section class="coconala-section"><div class="section-inner"><div class="section-label rv">COCONALA</div><h2 class="section-title rv">ココナラでも提供中</h2><div class="section-desc rv">各サービスはココナラからもご依頼いただけます。</div>
 <div class="coconala-links">
 <a href="https://coconala.com/services/4076329" target="_blank" rel="noopener" class="coconala-card rv"><div class="cc-icon green-bg">🤖</div><div><h4>EC業務の自動化</h4><p>商品説明生成、画像加工、多モール展開、カスタマー対応の自動化</p><div class="cc-arrow">ココナラで見る →</div></div></a>
 <a href="https://coconala.com/" target="_blank" rel="noopener" class="coconala-card rv"><div class="cc-icon purple-bg">📸</div><div><h4>売れる商品画像制作</h4><p>白抜き・A+・ページ構成最適化まで丸投げOK。元セラーが売れる画像を制作</p><div class="cc-arrow">ココナラで見る →</div></div></a>
@@ -506,10 +504,10 @@ footer{position:relative;z-index:1;background:var(--bg2);border-top:1px solid va
 </div></div></section>
 
 <!-- CONTACT -->
-<section id="contact" class="contact-section"><div class="section-inner"><div style="text-align:center"><div class="section-label">CONTACT</div><h2 class="section-title">お問い合わせ</h2><p class="section-desc">EC運営の「次のステージ」を一緒に作りませんか。<br>25年の経験とAIで、最適なプランをご提案します。</p></div>
+<section id="contact" class="contact-section"><div class="section-inner"><div style="text-align:center"><div class="section-label">CONTACT</div><h2 class="section-title">お問い合わせ</h2><p class="section-desc">「面倒くさい」を、一緒に片付けませんか。</p></div>
 <div class="contact-grid">
-<div class="contact-info rv"><h3>まずはお気軽にどうぞ</h3><p>ご相談は無料です。「この作業、自動化できますか？」くらいの段階から歓迎です。今のお悩みと目指したい姿を聞かせていただければ、最適なプランをご提案します。チャットで気軽にやりとりできます。</p>
-<div class="ci-item"><span>⚡</span> 通常1営業日以内にご返信</div><div class="ci-item"><span>💬</span> 初回相談無料・チャット完結</div><div class="ci-item"><span>🔧</span> オンラインミーティング対応可</div><div class="ci-item"><span>🕐</span> 平日10:00〜24:00 / 土日祝14:00〜24:00</div><div class="ci-item"><span>🌙</span> 深夜帯（22:00以降）のチャットも歓迎</div>
+<div class="contact-info rv"><h3>まずはお気軽にどうぞ</h3><p>「この作業、自動化できますか？」くらいの段階から歓迎。今のお悩みと目指したい姿を聞かせてください。最適なプランをご提案します。</p>
+<div class="ci-item"><span>⚡</span> 通常1営業日以内にご返信</div><div class="ci-item"><span>💬</span> 初回相談無料・チャット完結</div><div class="ci-item"><span>🕐</span> 平日10:00〜24:00 / 土日祝14:00〜24:00</div><div class="ci-item"><span>🌙</span> 深夜帯も歓迎</div>
 <div class="contact-badge">🔥 2026年4月まで特別価格でご提供中</div></div>
 <form class="contact-form rv" id="contactForm" action="https://formsubmit.co/rynmoca@gmail.com" method="POST">
 <input type="hidden" name="_subject" value="【rynmoca.com】新規お問い合わせ">
@@ -530,7 +528,7 @@ footer{position:relative;z-index:1;background:var(--bg2);border-top:1px solid va
 <footer>
 <div class="footer-logo">rynmoca<span>.</span>com</div>
 <nav class="footer-links" aria-label="フッター"><a href="#story">ストーリー</a><a href="#services">サービス</a><a href="#flow">ご利用の流れ</a><a href="#why">選ばれる理由</a><a href="#faq">FAQ</a><a href="#contact">お問い合わせ</a><a href="https://coconala.com/services/4076329" target="_blank" rel="noopener">ココナラ</a></nav>
-<p class="footer-text">EC × AI 自動化カンパニー<br>EC運営の面倒を、仕組みでゼロにする。</p>
+<p class="footer-text">EC × AI 自動化カンパニー<br>あなたの「面倒くさい」を、仕組みでゼロにする。</p>
 <p class="footer-copy">&copy; 2026 rynmoca Design. All rights reserved.</p>
 </footer>
 <script>
